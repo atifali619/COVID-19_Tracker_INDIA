@@ -1,4 +1,4 @@
-# Corona_Status_INDIA
+# COVID-19(Corona Virus) Tracker INDIA
 A python project that gives real-time stats of COVID-19(Corona Virus) in INDIA. 
 Using requests, bs4, tkinter, plyer, time and threading libraries.
 
