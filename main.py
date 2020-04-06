@@ -18,11 +18,11 @@ def get_corona_detail_of_india():
     url = "https://www.mohfw.gov.in/"
     html_data = get_html_data(url)
     bs = bs4.BeautifulSoup(html_data.text, 'html.parser')
-    info_div = bs.find("div", class_="information_row").find_all("div", class_="iblock")
+    info_div = bs.find("div", class_="site-stats-count").find("ul").find_all("li")
     all_details = ""
-    for block in info_div:
-        count = block.find("span", class_="icount").get_text()
-        text = block.find("div", class_="info_label").get_text()
+    for block in info_div[0:4]:
+        count = block.find("strong").get_text()
+        text = block.find("span").get_text()
         all_details = all_details + text + " : " + count + "\n"
     return all_details
 
