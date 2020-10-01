@@ -10,3 +10,18 @@ Screenshot of App :
 Screenshot of Notification :
 
 ![](screenshots/screenshot_notification.jpg)
+
+## TO RUN THIS LOCALLY
+
+- Clone this repo
+
+- Run this command to install dependancies
+
+  ```
+  pip install -r requirements.txt
+  ```
+- To start the Tracker, run
+
+  ```
+  python main.py
+  ```
